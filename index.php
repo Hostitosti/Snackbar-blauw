@@ -14,10 +14,15 @@ require "connection.php";
 </head>
 <body>
     <h1 class="display-1 m-5">Login</h1>
+
     <form action="" method="post" class="m-3">
         <div class="w-25">
             <label for="emailInput" class="form-label">Email address</label>
             <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" name="email">
+        </div>
+        <div class="w-25">
+            <label for="passwordInput" class="form-label">Password</label>
+            <input type="password" class="form-control" id="passwordInput" placeholder="Password" name="Password">
         </div>
     </form>
     

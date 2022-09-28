@@ -1,5 +1,7 @@
 <?php 
     require "connection.php";
+
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,7 +38,17 @@
 
         <div class="w-25">
             <label for="passwordInput" class="form-label">Password</label>
-            <input type="password" class="form-control" id="passwordInput" placeholder="Password" name="Password">
+            <input type="password" class="form-control" id="passwordInput" placeholder="Password" name="password">
+        </div>
+
+        <div class="w-25">
+        <labelclass="form-label">Role</label>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Select Role</option>
+            <option value="manager">Manager</option>
+            <option value="medewerker">Medewerker</option>
+            <option value="klant">Klant</option>
+        </select>
         </div>
 
         <div class="w-25 mt-3">

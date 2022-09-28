@@ -13,7 +13,7 @@ if(isset($_POST["submit"])){
 
     if($row['total'] > 0){
         echo "<script>alert('login succes')</script>";
-        //header("location: ");
+        header("location: index.php");
         die;
     }
     else

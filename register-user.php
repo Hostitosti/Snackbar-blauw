@@ -1,7 +1,29 @@
 <?php 
     require "connection.php";
 
+    if(isset($_POST["submit"]) && $_POST["fname"] != "" && $_POST['lname'] != "" && $_POST['email'] != "" && $_POST['password'] != "" && $_POST['phonenumber'] != "")
+    {
+        
+    $fname = $_POST['fname']; 
+    $lname = $_POST['lname']; 
+    $email = $_POST['email']; 
+    $password = $_POST['password'];
+    $phonenumber = $_POST['phonenumber']; 
+    $role = $_POST['role']; 
+     
     
+    
+    
+    $sql = "INSERT INTO user (firstname, lastname, phonenumber, email, password, role)
+    VALUES ('$fname','$lname','$phonenumber','$email','$password','$role')";
+    
+    if ($conn->query($sql) === TRUE) {
+        echo "New record created successfully";
+        header("location: index.php");
+        } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+        }$conn->close();
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -44,10 +66,9 @@
         <div class="w-25">
         <labelclass="form-label">Role</label>
         <select class="form-select" aria-label="Default select example">
-            <option selected>Select Role</option>
+            <option value="klant">Klant</option>
             <option value="manager">Manager</option>
             <option value="medewerker">Medewerker</option>
-            <option value="klant">Klant</option>
         </select>
         </div>
 

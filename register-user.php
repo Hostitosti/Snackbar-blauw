@@ -21,7 +21,7 @@
         echo "New record created successfully";
         header("location: index.php");
         } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+            echo "<script>alert('Error')</script>";
         }$conn->close();
     }
 ?>
@@ -65,7 +65,7 @@
 
         <div class="w-25">
         <labelclass="form-label">Role</label>
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select" aria-label="Default select example" name="role">
             <option value="klant">Klant</option>
             <option value="manager">Manager</option>
             <option value="medewerker">Medewerker</option>
@@ -73,7 +73,7 @@
         </div>
 
         <div class="w-25 mt-3">
-            <button type="submit" class="btn btn-primary">Register</button>
+            <button type="submit" name="submit" class="btn btn-primary">Register</button>
             <a href="" onclick="history.back()" style="float: right;">Back</a>
         </div>
     </form>

@@ -26,6 +26,7 @@ require "connection.php";
         </div>
         <div class="w-25 mt-3">
             <button type="submit" class="btn btn-primary">Confirm identity</button>
+            <a href="register-user.php" style="float: right;">Register +</a>
         </div>
     </form>
     

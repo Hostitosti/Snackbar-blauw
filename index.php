@@ -1,6 +1,27 @@
 <?php
 require "connection.php";
 
+if(isset($_POST["submit"])){
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+
+    $sql = mysqli_query($conn, "SELECT count(*) as total from user where email='".$email."' and password='".$password."'") or die(mysqli_error($conn));
+
+    $row = mysqli_fetch_array($sql);
+
+    
+
+    if($row['total'] > 0){
+        echo "<script>alert('login succes')</script>";
+        //header("location: ");
+        die;
+    }
+    else
+    {
+        echo "<script>alert('gebruikersnaam en wachtwoord zijn incorrect')</script>";
+    }
+
+}
 ?>
 
 <!DOCTYPE html>
@@ -22,10 +43,10 @@ require "connection.php";
         </div>
         <div class="w-25">
             <label for="passwordInput" class="form-label">Password</label>
-            <input type="password" class="form-control" id="passwordInput" placeholder="Password" name="Password">
+            <input type="password" class="form-control" id="passwordInput" placeholder="Password" name="password">
         </div>
         <div class="w-25 mt-3">
-            <button type="submit" class="btn btn-primary">Confirm identity</button>
+            <button type="submit" name="submit" class="btn btn-primary">Login</button>
             <a href="register-user.php" style="float: right;">Register +</a>
         </div>
     </form>

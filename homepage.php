@@ -34,9 +34,14 @@
 
 </nav>
 <div class="grid-container">
-  <div class="grid-item grid-item-1">1</div>
-  <div class="grid-item grid-item-2">2</div>
-  <div class="grid-item grid-item-3"><div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="grid-item grid-item-1"><h1>Welkom bij Snackbar Blauw</h1></div>
+  <div class="grid-item grid-item-2">
+      <h1>Over ons</h1>
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda non eligendi error sapiente corporis nesciunt nemo vel reprehenderit at, dolorem architecto recusandae maxime illum voluptates, ullam fugiat neque iure illo? Dolores ad consequuntur quis ea, expedita totam a itaque dignissimos quibusdam fugit voluptatum officia officiis eos eveniet accusantium, odit non, suscipit laudantium unde perspiciatis vero omnis in. Dicta, reprehenderit amet!</span>
+  </div>
+
+  <div class="grid-item grid-item-3">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="https://deolliemolle.nl/wp-content/uploads/2019/05/Snackbar-1038x576.jpg" class="d-block w-100" alt="...">
@@ -57,6 +62,7 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div></div>
+
   <div class="grid-item grid-item-4">4</div>
 
 </div>

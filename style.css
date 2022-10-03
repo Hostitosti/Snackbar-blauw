@@ -5,11 +5,14 @@
     grid-gap: 10px;
     grid-template-areas: 
     "header header header";
-
+    
 }
 .grid-item{
-    background-color: lightgray;
+
+    
 }
 .grid-item-1{
     grid-area: header;
+    margin: auto;
+    
 }

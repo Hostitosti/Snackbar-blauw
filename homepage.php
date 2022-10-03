@@ -34,6 +34,11 @@
 
 </nav>
 <div class="grid-container">
+  <div class="grid-item grid-item-1"></div>
+  <div class="grid-item grid-item-2"></div>
+  <div class="grid-item grid-item-3"></div>
+  <div class="grid-item grid-item-4"></div>
+  <div class="grid-item grid-item-5"></div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

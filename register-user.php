@@ -19,7 +19,7 @@
     
     if ($conn->query($sql) === TRUE) {
         echo "New record created successfully";
-        header("location: index.php");
+        header("location: login.php");
         } else {
             echo "<script>alert('Error')</script>";
         }$conn->close();

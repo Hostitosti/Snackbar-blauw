@@ -2,6 +2,7 @@
 require "connection.php";
 
 if(isset($_POST["submit"])){
+    session_destroy();
     $email = $_POST["email"];
     $password = $_POST["password"];
 
@@ -12,7 +13,11 @@ if(isset($_POST["submit"])){
     
 
     if($row['total'] > 0){
-        echo "<script>alert('login succes')</script>";
+        session_start();
+        $id = $row['id'];
+        $_SESSION['id'] = $id;
+        $_SESSION['email'] = $email;
+        //echo "<script>alert('login succes')</script>";
         header("location: index.php");
         die;
     }

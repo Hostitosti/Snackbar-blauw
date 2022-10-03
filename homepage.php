@@ -1,7 +1,6 @@
 <?php 
     require "connection.php";
     require "session.php"
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,8 +23,10 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="index.php">Login</a>
+          <a class="nav-link" aria-current="page" href="gerechten.php">Menu</a>
         </li>
+    </ul>
+    <ul class="navbar-nav mb-2 mb-lg-0 ">
         <li class="nav-item">
           <a class="nav-link active" href="logout.php">Logout</a>
         </li>

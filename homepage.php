@@ -34,11 +34,31 @@
 
 </nav>
 <div class="grid-container">
-  <div class="grid-item grid-item-1"></div>
-  <div class="grid-item grid-item-2"></div>
-  <div class="grid-item grid-item-3"></div>
-  <div class="grid-item grid-item-4"></div>
-  <div class="grid-item grid-item-5"></div>
+  <div class="grid-item grid-item-1">1</div>
+  <div class="grid-item grid-item-2">2</div>
+  <div class="grid-item grid-item-3"><div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://deolliemolle.nl/wp-content/uploads/2019/05/Snackbar-1038x576.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Snackbar_automatiek.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.rtlnieuws.nl/sites/default/files/content/images/2021/04/08/WhatsApp%20Image%202021-04-08%20at%2014.33.15.jpeg?itok=u1OWGo16&offsetX=0&offsetY=162&cropWidth=1600&cropHeight=900&width=1024&height=576&impolicy=dynamic" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div></div>
+  <div class="grid-item grid-item-4">4</div>
+
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

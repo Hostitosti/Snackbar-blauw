@@ -1,6 +1,6 @@
 <?php 
     require "connection.php";
-    require "session.php"
+    require "session.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">

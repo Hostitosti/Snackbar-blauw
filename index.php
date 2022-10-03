@@ -2,7 +2,7 @@
 require "connection.php";
 
 if(isset($_POST["submit"])){
-    session_destroy();
+    
     $email = $_POST["email"];
     $password = $_POST["password"];
 
@@ -13,6 +13,7 @@ if(isset($_POST["submit"])){
     
 
     if($row['total'] > 0){
+        session_destroy();
         session_start();
         $id = $row['id'];
         $_SESSION['id'] = $id;

@@ -13,6 +13,7 @@ if(isset($_POST["submit"])){
     
 
     if($row['total'] > 0){
+        session_unset();
         session_destroy();
         session_start();
         $id = $row['id'];

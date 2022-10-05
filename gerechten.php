@@ -41,30 +41,42 @@
 <div class="grid-container-menu">
 <?php if ( $result = mysqli_query($conn,$sql) )
         {
-          
           while ($row=mysqli_fetch_assoc($result))
             { 
             if($row['category'] == 'food') { ?>
               <div class="grid-item-menu">
-                <small class="text-muted"><?php echo $row['category']; ?></small>
-                <img src="<?php echo $row['image-link']; ?>" alt="<?php echo $row['name']; ?>">
-              <h1><?php echo $row['name']; ?></h1>
-            
+                <div class="grid-item-menu-content">
+                  <small class="text-muted"><?php echo $row['category']; ?></small>
+                    <img src="<?php echo $row['image-link']; ?>" alt="<?php echo $row['name']; ?>">
+                <h1><?php echo $row['name']; ?></h1>
+                <p><?php echo $row['description']; ?></p>
+                <h3>Prijs: € <?php echo $row['selling_price']; ?> </h3>
+                </div>
             </div>
-            
             <?php } 
+             } 
+             }
+            mysqli_free_result($result);
+         ?>
+         <?php if ( $result = mysqli_query($conn,$sql) )
+        {
+          while ($row=mysqli_fetch_assoc($result))
+            { 
             if($row['category'] == 'drinks') { ?>
               <div class="grid-item-menu">
-              <small class="text-muted"><?php echo $row['category']; ?></small>
-              <h1><?php echo $row['name']; ?></h1>
-            
+                <div class="grid-item-menu-content">
+                  <small class="text-muted"><?php echo $row['category']; ?></small>
+                    <img src="<?php echo $row['image-link']; ?>" alt="<?php echo $row['name']; ?>">
+                <h1><?php echo $row['name']; ?></h1>
+                <p><?php echo $row['description']; ?></p>
+                <h3>Prijs: € <?php echo $row['selling_price']; ?> </h3>
+                </div>
             </div>
-            
             <?php } 
+             } 
              }
-            
             mysqli_free_result($result);
-        } ?>
+         ?>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

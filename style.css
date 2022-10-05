@@ -21,16 +21,20 @@
     margin-left: 20px;
     margin-right: 20px;
     grid-template-areas: 
-    "header2 header2 header2 header2"
-    ;
+    "header2 header2 header2 header2";
 }
 
 
 .grid-item-menu{
     background-color: lightgray;
+    border-radius: 10px;
 }
 
-.grid-item-menu2{
-    grid-area: header2;
-    
+.grid-item-menu-content{
+    margin: 10px;
+}
+
+.grid-item-menu img{
+width: 100%;
+height: 200px;
 }

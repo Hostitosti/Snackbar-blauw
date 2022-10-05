@@ -38,3 +38,13 @@
 width: 100%;
 height: 200px;
 }
+
+.add-product-btn{
+    text-decoration: none;
+    font-size: 100px;
+    align-self: center;
+    transition-duration: 0.1s;
+}
+.add-product-btn:hover {
+    font-size: 125px;
+}

@@ -77,8 +77,10 @@
              }
             mysqli_free_result($result);
          ?>
+          <?php if ($_SESSION['role'] == 'medewerker' || $_SESSION['role'] == 'manager'){
+            ?><a href="" class="add-product-btn">+</a><?php
 
-           <a href="" class="add-product-btn">+</a>
+          }?>
 
 </div>
 

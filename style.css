@@ -11,8 +11,6 @@
 
 .grid-item-1{
     grid-area: header;
-
-    
 }
 
 .grid-container2{
@@ -25,7 +23,7 @@
 }
 
 
-.grid-item-2{
+.grid-item2{
     grid-area: header;
     background-color: lightgray;
     

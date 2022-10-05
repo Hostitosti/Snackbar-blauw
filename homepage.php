@@ -37,7 +37,7 @@
 </nav>
 <div class="grid-container">
   <div class="grid-item grid-item-1 text-center mt-3"><h1>Welkom <mark><?php echo $_SESSION['firstname'] ?></mark> bij Snackbar Blauw</h1></div>
-  <div class="grid-item grid-item-2">
+  <div class="grid-item">
       <h1>Over ons</h1>
       <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda non eligendi error sapiente corporis nesciunt nemo vel reprehenderit at, dolorem architecto recusandae maxime illum voluptates, ullam fugiat neque iure illo? Dolores ad consequuntur quis ea, expedita totam a itaque dignissimos quibusdam fugit voluptatum officia officiis eos eveniet accusantium, odit non, suscipit laudantium unde perspiciatis vero omnis in. Dicta, reprehenderit amet!</span>
   </div>

@@ -3,10 +3,6 @@
     require "session.php";
 
     $sql = "SELECT * FROM products";
-
-
-    $result = mysqli_query($conn,$sql);
-    $all_products = mysqli_fetch_all($result, MYSQLI_ASSOC);
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Menu</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
@@ -41,23 +37,22 @@
   </div>
 </nav>
 
-<div class="grid-container-2">
-    <div class="grid-item2"></div>
-</div>
+<div class="grid-container-menu">
 <?php if ( $result = mysqli_query($conn,$sql) )
         {
           
           while ($row=mysqli_fetch_assoc($result))
             { ?>
-                        <tr>
-                        <th scope="row"><?php echo $row['id']; ?></th>
-                        <td><?php echo $row['name']; ?></td>
-                        </tr>
-                        
-                        <?php }
+            <div class="grid-item-menu">
+              <h1>a</h1>
+                <?php echo $row['name']; ?>
+            </div>
+      <?php }
             
             mysqli_free_result($result);
         } ?>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

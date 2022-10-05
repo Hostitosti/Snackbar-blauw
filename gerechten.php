@@ -37,17 +37,31 @@
   </div>
 </nav>
 
+
 <div class="grid-container-menu">
 <?php if ( $result = mysqli_query($conn,$sql) )
         {
           
           while ($row=mysqli_fetch_assoc($result))
-            { ?>
-            <div class="grid-item-menu">
-              <h1>a</h1>
-                <?php echo $row['name']; ?>
+            { 
+            if($row['category'] == 'food') { ?>
+              <div class="grid-item-menu">
+                <small class="text-muted"><?php echo $row['category']; ?></small>
+                <img src="<?php echo $row['image-link']; ?>" alt="<?php echo $row['name']; ?>">
+              <h1><?php echo $row['name']; ?></h1>
+            
             </div>
-      <?php }
+            
+            <?php } 
+            if($row['category'] == 'drinks') { ?>
+              <div class="grid-item-menu">
+              <small class="text-muted"><?php echo $row['category']; ?></small>
+              <h1><?php echo $row['name']; ?></h1>
+            
+            </div>
+            
+            <?php } 
+             }
             
             mysqli_free_result($result);
         } ?>
